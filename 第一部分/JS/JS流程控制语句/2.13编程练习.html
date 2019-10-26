@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>水仙花数</title>
+</head>
+<body>
+<script>
+    // 	填写代码
+    var hundreds,tens,ones;
+    for (var i = 100; i<1000; i++){
+        hundreds=parseInt(i/100);
+        tens=parseInt((i-(hundreds*100))/10);
+        ones=i-(hundreds*100)-(tens*10);
+        if (hundreds * hundreds * hundreds + tens * tens * tens + ones * ones * ones == i)
+        {document.write(i + "<br/>")}
+    }
+</script>
+</body>
+</html>

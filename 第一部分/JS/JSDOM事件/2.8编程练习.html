@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>HTML事件</title>
+</head>
+<body>
+<!--补充代码-->
+<input type="button" class="btn1" value="开始" onmousemove="syj(this,'purple','yellow')" onmouseout="syf(this,'gray')">
+
+<input type="button" class="btn2" value="结束" onmousemove="syj(this,'yellow')" onmouseout="syf(this,'blue')">
+<input type="button" class="btn3" value="start" onmousemove="syj(this,'red')" onmouseout="syf(this, 'green')">
+
+<script type="text/javascript">
+    //补充代码
+    function syj(btn,color,backgroundColor) {
+btn.style.color=color;
+btn.style.backgroundColor=backgroundColor;
+    }
+    function syf(btn,color) {
+        btn.style.color=color;
+    }
+</script>
+
+
+</body>
+</html>

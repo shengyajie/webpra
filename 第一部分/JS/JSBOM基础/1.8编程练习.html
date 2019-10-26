@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>输入框</title>
+</head>
+<body>
+<input type="button" value="点击">
+<script type="text/javascript">
+    //补充代码
+    var con=document.getElementsByTagName("input")[0];
+    con.onclick=function () {
+        var relust=window.prompt("请输入文字\n输入大写字母")
+    if(relust!=null){
+        con.value=relust;
+    }
+    }
+</script>
+</body>
+</html>

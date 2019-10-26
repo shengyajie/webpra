@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>伪类选择器</title>
+    <style type="text/css">
+        p{height:30px;}
+        /*补充代码*/
+        a{text-decoration:none;}
+        a:link{color:orange;}
+        .suit a:visited{color:green;}
+        .wc a:visited{color:blue;}
+        .skin a:visited{color:purple;}
+        a:hover{color:green;font-weight:20px;border:1px solid red;}
+    </style>
+</head>
+<body>
+<h2>商品列表</h2>
+<p class="suit">
+    <a href="#4">衣服鞋帽</a>
+</p>
+<p class="wc">
+    <a href="#2">厕所清洁</a>
+</p>
+<p class="skin">
+    <a href="#3">化妆用品</a>
+</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>伪类选择器</title>
+    <style type="text/css">
+        p{height:30px;}
+        /*补充代码*/
+        a{text-decoration:none;}
+        a:link{color:orange;}
+        a.suit:visited{color:green;}
+        a.wc:visited{color:blue;}
+        a.skin:visited{color:purple;}
+        a:hover{color:green;font-weight:20px;border:1px solid red;}
+    </style>
+</head>
+<body>
+<h2>商品列表</h2>
+<p>
+    <a href="#5" class="suit">衣服鞋帽</a>
+</p>
+<p>
+    <a href="#26" class="wc">厕所清洁</a>
+</p>
+<p>
+    <a href="#37" class="skin">化妆用品</a>
+</p>
+</body>
+</html>

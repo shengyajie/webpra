@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>打开/关闭页面</title>
+</head>
+<body>
+<input type="button" name="" value="打开页面">
+<script type="text/javascript">
+    //补充代码
+    var btn=document.getElementsByTagName("input")[0];
+    btn.onclick=function () {
+        var con=window.confirm("请点击");
+        if(con!=false){
+            window.open("newPage.html","newpage","width=300,height=300,left=600,top=200,toolbar=no,menubar=no,scrollbars=no,location=no,status=no");
+        }else {
+            colse()
+        }
+    }
+</script>
+</body>
+</html>

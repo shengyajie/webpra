@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function add() {
+        var sum=0,len=arguments.length,i;
+        for (i=0;i<len;i++){
+            sum+=arguments[i];
+        }
+        return sum/len;
+    }
+    alert(parseInt(add(10,11,12,12,13)));
+</script>
+</body>
+</html>

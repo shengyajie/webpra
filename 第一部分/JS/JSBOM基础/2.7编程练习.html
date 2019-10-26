@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>location方法</title>
+</head>
+<!--（1）   当点击”操作页面”按钮时，弹出确认框“刷新页面么？”-->
+
+<!--（2）   当点击确认框的“确定”时，重新加载当前显示的页面-->
+
+<!--当点击确认框的”取消”时，打开慕课网网站，当前网页不能后退-->
+<body>
+<input type="button" value="操作页面" id="ck">
+<script type="text/javascript">
+    //补充代码
+    var btn=document.getElementById("ck");
+    btn.onclick=function () {
+        var con=window.confirm("确认操作");
+        if(con!=0){
+            location.reload();
+        }else{
+            location.replace("http://www.imooc.com");
+        }
+    }
+</script>
+</body>
+</html>

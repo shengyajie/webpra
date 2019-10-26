@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <title>函数的间接调用</title>
+</head>
+<body>
+<script>
+    // 在此处补充代码
+    var arr=[4,3,2,1];
+    function mul(a,b,c,d){
+        return a*b*c*d;
+    }
+    document.write(mul.apply(this,arr));
+</script>
+</body>
+</html>

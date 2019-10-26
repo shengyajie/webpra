@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>mouse</title>
+    <style type="text/css">
+        #div{overflow:auto;width:200px;height:200px;border:2px solid gray;margin-bottom:20px;}
+        #content{width:200px;height:100px;border:2px solid gray;}
+    </style>
+</head>
+<body>
+<div id="div">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod,tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo,consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse,cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non,proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div id="content"></div>
+<div id="syj">盛亚杰很美 </div>
+<script type="text/javascript">
+    //补充代码
+    var p1=document.getElementById("div");
+    var p2=document.getElementById("content");
+    p1.onscroll=function () {
+        p2.innerHTML="内容滚动啦";
+    }
+    p1.onmousemove=function () {
+        p1.style.color="red";
+    }
+    p1.onmouseout=function () {
+        p1.style.color="green";
+    }
+    var s=document.getElementById("syj");//先获取syj，存放到对象s中
+    s.onclick=function(){//定义函数，方法
+        s.innerHTML="盛亚飞很帅"
+    }
+
+</script>
+</body>
+</html>

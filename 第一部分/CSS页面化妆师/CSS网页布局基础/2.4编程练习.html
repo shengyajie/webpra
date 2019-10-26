@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+<!--1） 导航在左，导航项在右-->
+<!--（2） 导航logo和导航项都有鼠标点击效果-->
+<!--（3） 导航项水平和垂直方向都居中显示，每个导航项之间的距离一样。-->
+<!--http://climg.mukewang.com/58c0d2d900016ce303000100.png-->
+<style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .nav{
+        width: 1100px;
+        height: 100px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background-color: black;
+        margin-top: -50px;
+        margin-left: -550px;
+    }
+    .nav .logo{
+        width: 300px;
+        height: 100px;
+    }
+    .nav .logo img{
+        display: block;
+    }
+    .nav ul{
+        position: absolute;
+        right: 0;
+        top:50%;
+        margin-top: -15px;
+    }
+    .nav ul li{
+        float: left;
+        font: 23px "微软雅黑",sans-serif;
+        margin-right: 40px;
+        margin-left: 30px;
+    }
+    .nav ul li a{
+        text-decoration: none;
+        color: #FFFFF;
+    }
+</style>
+</head>
+<body>
+<div class="nav">
+    <div class="logo">
+        <a href="#"><img src="http://climg.mukewang.com/58c0d2d900016ce303000100.png"></a>
+    </div>
+    <ul>
+        <li><a href="#">课程</a></li>
+        <li><a href="#">职业路径</a></li>
+        <li><a href="#">实战</a></li>
+        <li><a href="#">猿问</a></li>
+        <li><a href="#">手记</a></li>
+    </ul>
+</div>
+</body>
+</html>

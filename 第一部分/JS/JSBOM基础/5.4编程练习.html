@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>userAgent</title>
+</head>
+<!--当用户点击页面上的“点击获取浏览器信息”按钮时，页面会弹出窗口告知当前使用的浏览器是什么浏览器。-->
+<body>
+<input type="button" value="点击获取浏览器信息" id="browser">
+<script type="text/javascript">
+    //补充代码
+    var btn=document.getElementById("browser");
+    function getBrowserInfo () {
+        var info = navigator.userAgent;
+        var result = "未知";
+        if (info.includes("MSIE")) {
+            result = "IE浏览器";
+        }
+        if (info.includes("Firefox")) {
+            result = "火狐浏览器";
+        }
+        if (info.includes("Chrome")) {
+            result = "谷歌浏览器";
+        }
+        return result;
+    }
+    function btnClick() {
+        var result = getBrowserInfo();
+        alert(`您使用的浏览器是${result}`);
+    }
+    btn.onclick = btnClick;
+    alert("您使用的浏览器是"+br);
+</script>
+</body>
+</html>

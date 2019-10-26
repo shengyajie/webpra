@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        /*此处写代码*/
+        *{
+            margin: 0;
+            padding: 0;
+            font: 24px"微软雅黑";
+            color: white;
+        }
+        .header{
+            width: 100%;
+            height: 100px;
+            background: black;
+            position: fixed;
+            top:0;
+        }
+        .logo{
+            float: left;
+        }
+        .nav{
+            float: right;
+        }
+        .nav ul li{
+            list-style: none;
+            display: inline-block;
+            margin: auto 40px;
+            line-height: 100px;
+        }
+        img{
+            width: 100%;
+            display: block;
+        }
+        .content{
+            overflow: hidden;
+            background: #add8e6;
+            text-align: left;
+            height: 500px;
+           margin-top: 100px;
+        }
+        .content1{
+            width: 35%;
+            height: 500px;
+            float:left;
+        }
+        .content2{
+            width: 29%;
+            height:500px;
+            float: left;
+        }
+        .content3{
+            width: 35%;
+            height: 500px;
+            float: right;
+        }
+        .content form input{
+            display: block;
+            width: 300px;
+            height: 40px;
+            margin: 20px 0;
+            border: 1px solid gray;
+        }
+        .content form input[type="submit"]{
+            width: 302px;
+            border: none;
+            background: red;
+            color: #fff;
+        }
+   .footer{
+       width: 100%;
+       height: 100px;
+       line-height: 100px;
+       text-align: center;
+       background: black;
+       position: fixed;
+       bottom: 0;
+   }
+   .footer ul li{
+       display: inline-block;
+       margin: 40px;
+   }
+   a{
+       text-decoration: none;
+   }
+
+    </style>
+</head>
+<body>
+<!-- 此处写代码 -->
+<div class="header">
+    <div class="logo"><a href="#1"><img src="http://climg.mukewang.com/58c0d2d900016ce303000100.png"
+                                        alt="logo" /></a></div>
+    <div class="nav">
+        <ul>
+            <a href="#2"><li>课程</li></a>
+            <a href="#3"><li>职业路径</li></a>
+            <a href="#4"><li>实战</li></a>
+            <a href="#5"><li>猿问</li></a>
+            <a href="#6"><li>手记</li></a>
+        </ul>
+    </div>
+</div>
+<div class="content">
+    <div class="content1">
+        <div class="content11">
+            <h3>课程推荐</h3>
+            <p><span>职业路径</span>&nbsp;HTML5与CSS3实现动态网页</p>
+            <p><span>职业路径</span>&nbsp;零基础入门Android语法与界面</p>
+            <p><span>职业路径</span>&nbsp;IOS基础语法与常用控件</p>
+            <p><span>职业路径</span>&nbsp;PHP入门开发</p>
+            <p><span>职业路径</span>&nbsp;JAVA入门开发</p>
+        </div>
+    </div>
+    <div class="content2">
+        <div class="content22">
+            <h3>相关课程</h3>
+            <p>HTML&nbsp;&nbsp;CSS&nbsp;&nbsp;javaScipt</p>
+            <p>HTML5&nbsp;&nbsp;CSS3&nbsp;&nbsp;Jquery</p>
+            <p>移动前端基础&nbsp;&nbsp;移动端APP开发</p>
+
+        </div>
+    </div>
+    <div class="content3">
+        <div class="content33">
+            <h2>登录</h2>
+            <form>
+                <input type="text" name="denglu" placeholder="请输入登录邮箱/手机号">
+                <input type="password" name="mima" placeholder="6-16位密码，区分大小写，不能用空格">
+                <input type="submit" name="dneglu2" value="登录">
+            </form>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <ul>
+        <a href="#7"><li>网站首页</li></a>
+        <a href="#8"><li>企业合作</li></a>
+        <a href="#9"><li>人才招聘</li></a>
+        <a href="#10"><li>联系我们</li></a>
+        <a href="#11"><li>常见问题</li></a>
+        <a href="#12"><li>友情链接</li></a>
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <title>三种定义方式</title>
+</head>
+<body>
+<script type="text/javascript">
+    // 补充代码
+    var add = new Function('num1','num2','return num1+num2');
+    var subtract = new Function('num1','num2','return num1-num2');
+    var multply = new Function('num1','num2','return num1*num2');
+    var divide = new Function('num1','num2','return num1/num2');
+    alert(add(multply(21,32),subtract(divide(24,1),5)));
+</script>
+</body>
+</html>

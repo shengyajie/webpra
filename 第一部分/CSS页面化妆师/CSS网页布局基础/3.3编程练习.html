@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        /*此处写代码*/
+        *{
+            margin: 0;
+            padding: 0;
+            font: 24px"微软雅黑";
+            color: white;
+        }
+        .header{
+            width: 100%;
+            height: 100px;
+            background: black;
+            position: fixed;
+            top:0;
+        }
+        .logo{
+            float: left;
+        }
+        .nav{
+            float: right;
+        }
+        .nav ul li{
+            list-style: none;
+            display: inline-block;
+            margin: auto 40px;
+            line-height: 100px;
+        }
+        img{
+            width: 100%;
+            display: block;
+        }
+        .content {
+            padding: 0 220px 0 200px;
+            overflow: hidden;
+        }
+
+        .left, .middle, .right {
+            position: relative;
+            float: left;
+            min-height: 300px;
+        }
+
+        .middle {
+            width: 100%;
+            height: 500px;
+            background: orange;
+        }
+
+        .left {
+            width: 200px;
+            height: 500px;
+            background: pink;
+            margin-left: -100%;
+            left: -200px;
+        }
+
+        .right {
+            width: 220px;
+            height: 500px;
+            background: blue;
+            margin-left: -220px;
+            right: -220px;
+        }
+        .footer{
+            width: 100%;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            background: black;
+            position: fixed;
+            bottom: 0;
+        }
+        .footer ul li{
+            display: inline-block;
+            margin: 40px;
+        }
+        a{
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+<!-- 此处写代码 -->
+<div class="header">
+    <div class="logo"><a href="#1"><img src="http://climg.mukewang.com/58c0d2d900016ce303000100.png"
+                                        alt="logo" /></a></div>
+    <div class="nav">
+        <ul>
+            <a href="#2"><li>课程</li></a>
+            <a href="#3"><li>职业路径</li></a>
+            <a href="#4"><li>实战</li></a>
+            <a href="#5"><li>猿问</li></a>
+            <a href="#6"><li>手记</li></a>
+        </ul>
+    </div>
+</div>
+<div class="content">
+    <div class="middle">
+        <img src="http://climg.mukewang.com/590037e00001fab706000400.jpg" alt="慕课网">
+    </div>
+    <div class="left">
+        <h2>课程推荐</h2>
+        <p><span>职业路径</span>HTML5与SCC3实现动态网页</p>
+        <p><span>职业路径</span>零基础入门Android语法与界面</p>
+        <p><span>职业路径</span>IOS基础语法与常用控件</p>
+        <p><span>职业路径</span>PHP入门开发</p>
+        <p><span>职业路径</span>Java入门开发</p>
+    </div>
+    <div class="right">
+        <form>
+            <h1>登录</h1>
+            <input type="text" name="yonghuming" placeholder="请输入登录邮箱/手机号" size="35">
+            <input type="password" name="mima" placeholder="6-16位密码，区分大小写，不能用空格" size="35">
+            <input type="submit" name="denglu" value="登录">
+        </form>
+    </div>
+</div>
+
+<div class="footer">
+    <ul>
+        <a href="#7"><li>网站首页</li></a>
+        <a href="#8"><li>企业合作</li></a>
+        <a href="#9"><li>人才招聘</li></a>
+        <a href="#10"><li>联系我们</li></a>
+        <a href="#11"><li>常见问题</li></a>
+        <a href="#12"><li>友情链接</li></a>
+    </ul>
+</div>
+</body>
+</html>

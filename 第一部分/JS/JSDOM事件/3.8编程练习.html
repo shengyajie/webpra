@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>onblur和onfocus</title>
+    <style type="text/css">
+        .red{
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+姓名：<input type="text">
+<span></span>
+<script type="text/javascript">
+    // 补充代码
+    var input=document.getElementsByTagName('input')[0],
+        tip=document.getElementsByTagName('span')[0];
+    input.onfocus=function(){
+        var ipval=this.value;
+        if(ipval.length==0){
+            tip.innerHTML="请输入您的姓名";
+        }
+    }
+    input.onblur=function(){
+        var ipv=this.value;
+        if(ipv.length==0){
+            this.className="red";
+            tip.innerHTML="用户名不能为空";
+        }else{
+            tip.innerHTML="";
+        }
+    }
+</script>
+</body>
+</html>

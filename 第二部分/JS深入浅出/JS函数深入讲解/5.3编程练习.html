@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    // 在此处补充代码
+    //法1
+    (function(){
+        function subtract(a,b){
+            return document.write(a-b);
+        }
+        subtract(56,23);
+    }());
+    //法2
+    (function(){
+        function subtract(a,b){
+            return document.write(a-b);
+        }
+        subtract(56,23);
+    })();
+    //法3
+    !function(){
+        function subtract(a,b){
+            return document.write(a-b);
+        }
+        subtract(56,23);
+    }()
+</script>
+</body>
+</html>

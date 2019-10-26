@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <title>方法的调用</title>
+</head>
+<body>
+<script type="text/javascript">
+    // 在此处完成任务
+    var person = {
+        setPerson:function(property,value){
+            this[property] = value;
+
+        }
+    }
+    person.setPerson("name","xm");
+    person.setPerson("age",18);
+    person.setPerson("sex","male");
+    console.log(person);
+</script>
+</body>
+</html>

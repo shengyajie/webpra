@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <title>简易计算器</title>
+    <style>
+        body {
+            background-color: #eee;
+        }
+        #calculator {
+            margin: 100px 0 0 150px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 简易计算器 -->
+<div id="calculator">
+    <p>
+        <input type="text" class="formerInput" value="1" />
+        <span class="sign">+</span>
+        <input type="text" class="laterInput" value="1" />
+        <span>=</span>
+        <span class="resultOutput">2</span>
+    </p>
+    <p>
+<!--       <input type="button" value="+" onclick="addHandler();" />-->
+<!--        <input type="button" value="-" onclick="subtractHandler();" />-->
+<!--        <input type="button" value="×" onclick="multiplyHandler();" />-->
+<!--        <input type="button" value="÷" onclick="divideHandler();" />-->
+        <input type="button" class="btn" value="+" title="add">
+        <input type="button" class="btn" value="-" title="subtract">
+        <input type="button" class="btn" value="×" title="multiply">
+        <input type="button" class="btn" value="÷" title="divide">
+    </p>
+</div>
+<script>
+    // 第一次改进，将结构和行为分离
+    //第四次改进管理代码，
+    //
+    // var calculator=document.querySelector("#calculator");
+    // var formerInput=calculator.querySelector(".formerInput");
+    // var laterInput=calculator.querySelector(".laterInput");
+    // var sign=calculator.querySelector(".sign");
+    // var resultOutput=calculator.querySelector(".resultOutput");
+    // var btns=calculator.querySelectorAll(".btn");
+    var wrapElem=document.querySelector("#calculator");
+    var calculatorElem={
+        formerInput:calculator.querySelector(".formerInput"),
+        laterInput:calculator.querySelector(".laterInput"),
+        sign:calculator.querySelector(".sign"),
+        resultOutput:calculator.querySelector(".resultOutput"),
+        btns:calculator.querySelectorAll(".btn"),
+        wrapElem:document.querySelector("#calculator"),
+    };
+
+    //绑定事件
+    // btns[0].onclick= addHandler;
+    // btns[1].onclick=subtractHandler;
+    // btns[2].onclick=multiplyHandler;
+    // btns[3].onclick=divideHandler;
+    //第二次改写循环
+    each(calculatorElem.btns,function (index,elem) {
+       elem[i].onclick=function () {
+            switch (this.title) {
+                case "add":
+                    addHandler();
+                    break;
+                case "subtract":
+                    subtractHandler();
+                    break;
+                case "multiply":
+                    multiplyHandler();
+                    break;
+                case "divide":
+                    divideHandler();
+                    break;
+            }
+        };
+    });
+
+//第三次改进 提取函数
+    //遍历
+    function each(array,fn) {
+        for(var i=0;i>array.length;i++){
+            fn(i,array[i]);
+        }
+    }
+    //更新符号
+    function updateSign(symbol) {
+        calculatorElem.sign.innerHTML=symbol;
+    }
+
+    //加法
+    function add(num1,num2) {
+        return num1+num2;
+    }
+    //减法
+    function subtract(num1,num2) {
+        return num1-num2;
+    }
+    //乘法
+    function multiply(num1,num2) {
+        return num1* num2;
+    }
+    //除法
+    function divide(num1,num2) {
+        return num1/ num2;
+    }
+    //输出结果
+    function outputResult(result) {
+        calculatorElem.resultOutput.innerHTML=result;
+    }
+    // 加
+    function addHandler() {
+    	updateSign("+");
+        outputResult(add(calculatorElem.formerInput.value,calculatorElem.laterInput.value));
+    }
+    // 减
+    function subtractHandler() {
+    	updateSign("-");
+        outputResult(subtract(calculatorElem.formerInput.value,calculatorElem.laterInput.value));
+    }
+    // 乘
+    function multiplyHandler() {
+    	updateSign("×");
+        outputResult(multiply(calculatorElem.formerInput.value,calculatorElem.laterInput.value));
+    }
+    // 除
+    function divideHandler() {
+    	updateSign("÷");
+        outputResult(divide(calculatorElem.formerInput.value,calculatorElem.laterInput.value));
+    }
+
+</script>
+</body>
+</html>

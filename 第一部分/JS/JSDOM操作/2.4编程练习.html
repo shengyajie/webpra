@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .li{list-style:none;height:50px;line-height:50px;width:100px;background-color:lightblue;text-align:center;}
+    </style>
+</head>
+<body>
+<script>
+    //在此处补充代码
+    var ul = document.createElement("ul");
+    var fragment = document.createDocumentFragment();
+    var comment = document.createComment("创建节点");
+    var li = null;
+    for(var i=0;i<4;i++){
+        li = document.createElement("li");
+        li.appendChild(document.createTextNode("第"+(i+1)+"个li"));
+        fragment.appendChild(li);
+        li.className = "li";
+    }
+    ul.appendChild(fragment);
+    document.body.insertBefore(ul,document.body.firstChild);
+</script>
+</body>
+</html>
